@@ -3,30 +3,97 @@
   <head>
     <link rel="icon" href="https://image.flaticon.com/icons/svg/197/197571.svg">
     <div class="container">
-    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png" style="width:50%;" width="680" height="190" alt="German Flag">
+    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1280px-Flag_of_Germany.svg.png" style="width:50%;" width="707" height="190" alt="German Flag">
     <div class="blink_text">German</div>  
     </div>
       
       <title>German Subject</title>
 <body>
-  <p class="speech">Deutchland</p>
 <style>
-  
-  p.speech {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  line-height: 100px;
-  background-color: #fff;
-  border: 8px solid #666;
-  -webkit-border-radius: 30px;
-  -moz-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-box-shadow: 2px 2px 4px #888;
-  -moz-box-shadow: 2px 2px 4px #888;
-  box-shadow: 2px 2px 4px #888;
+  <head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #D9CB8C;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: #FF9666;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #C95E5E}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="">Home</a></li>
+  <li><a href=""></a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Subjects</a>
+    <div class="dropdown-content">
+      <a href="">Maths</a>
+      <a href="">English</a>
+      <a href="">Irish</a>
+       <a href="">Geography</a>
+       <a href="">Science</a>
+       <a href="">History</a>
+       <a href="">Religion</a>
+      <a href="javascript:void(0)" class="dropbtn">Choice Subjects</a>
+    <div class="dropdown-content">
+       <a href="">Coding</a>
+       <a href="">Music</a>
+       <a href="">Woodwork</a>
+       <a href="">Technical Graphics</a>
+       <a href="">Home Economics</a>
+      <a href="">Business</a>
+      <a href="">Art</a>
+  <li><a href="">Contact</a></li>
+    </div>
+  </li>
+</ul>
+
+</body>
   
   .container {
     position: relative;
