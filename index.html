@@ -27,7 +27,51 @@
   
 <body> 
 
+  <div class="row">
+  <div class="column side">
+    <h2>Teachers</h2>
+    <p>The German Teachers in St Josephs Secondary School are as follows;<br>Ms Yvonne Kiely<br>Ms Anita Irwin and<br>Ms Olwyn Hall</p>
+  </div>
+  <div class="column middle">
+    <h2>The Course</h2>
+    <p></p>
+  </div>
+  <div class="column side">
+    <h2>Exams</h2>
+    <p></p>
+  </div>
+</div>
+  
 <style>
+  
+  .column {
+    float: left;
+    padding: 10px;
+}
+
+
+.column.side {
+    width: 25%;
+}
+
+
+.column.middle {
+    width: 50%;
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
   
   ul {
     list-style-type: none;
@@ -41,7 +85,7 @@
 }
 
 li {
-    float: center;
+    float: left;
 }
 
 li a, .dropbtn {
@@ -136,43 +180,8 @@ text-
     
 }
  
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-  .column {
-    float: left;
-    width: 50%;
-    padding: 15px;
-    font-size: 35;
-}
 
-  .gif {
-    left: 30px;
-    bottom: 30px;
-  }
-  
 </style>
 
-</head>
-<body>
-  
-<div class="row">
-  <div class="column">
-    <h2>About the subject</h2>
-    <p>lots of stuff</p>
-  </div>
-  
-  <div class="column">
-    <h2>The Course</h2>
-    <p>stuff</p>
-  </div>
-  
-
-   <div class="gif">
- <img src="https://media1.tenor.com/images/cbce243188cf8f6083cd588db489dc84/tenor.gif?itemid=5643710" width="350" height="350">
-  </div>
-  
 </body>
 </html>
