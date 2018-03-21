@@ -2,8 +2,8 @@
 <html>
   <head>
     Welcome to St Josephs Secondary Schools German Website<br>
-    <img src="https://cdn2.iconfinder.com/data/icons/money-shoping/96/map_marker_mark_destination-512.png" width="15" height="15" alt="Address">Address:rush, rush, rush.
-    <img src="https://d30y9cdsu7xlg0.cloudfront.net/png/42970-200.png" width="15" height="15" alt="Telephone Number">Tel: 01-8437534
+    Address:rush, rush, rush.<img src="https://cdn2.iconfinder.com/data/icons/money-shoping/96/map_marker_mark_destination-512.png" width="15" height="15" alt="Address">
+    Tel: 01-8437534<img src="https://d30y9cdsu7xlg0.cloudfront.net/png/42970-200.png" width="15" height="15" alt="Telephone Number">
     
 
 
@@ -20,18 +20,19 @@
   
 <body> 
   
-  <ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#news">News</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
-    <div class="dropdown-content">
-      <a href="#">stuff</a>
-      <a href="#">stuff</a>
-      <a href="#">stuff</a>
-    </div>
-  </li>
-</ul>
+ <div id="nav">
+    <ul>
+        <li>
+          <a href="https://stjrush.github.io/DBoyz/Model3.html">Home</a>
+        </li>
+        <li><a href="https://toddmilne13.github.io/images.html/images.html">School</a>
+        </li>
+        <li><a href="https://toddmilne13.github.io/updates.html/updates.html">School</a>
+        </li>
+        <li><a href="https://joshboybirney.github.io/info/About.html">School</a>
+    </ul>
+    
+  </div>
 
 
   <div class="row">
@@ -87,35 +88,39 @@ html {
     }
 }
   
-  ul {
+#nav {
+    right: 10px;
+    height: 70px;
+    background-color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 35px;
+  
+    
+}
+#nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #424242;
-    text-align: center;
-    font-size: 25px;
-    font-style: monospace;
-}
-
-li {
-    float: left;
-}
-
-li a, .dropbtn {
     display: inline-block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+}
+#nav ul li {
+    margin: 0;
+    padding: 0;
+    float:left;
+    height: 100px;
+}
+#nav ul li a {
     text-decoration: none;
+    padding: 10px 25px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-family: monospace;
+    color: white;
 }
-
-li a:hover, .dropdown:hover .dropbtn {
-    background-color: ffff00;
-}
-
-li.dropdown {
-    display: inline-block;
+#nav ul li a:hover {
+    color: red;
 }
 
 .dropdown-content {
