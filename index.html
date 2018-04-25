@@ -6,15 +6,14 @@
 .loader {
   border: 16px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 16px solid blue;
-  border-right: 16px solid green;
-  border-bottom: 16px solid red;
+  border-top: 16px solid #3498db;
   width: 120px;
   height: 120px;
-  -webkit-animation: spin 2s linear infinite;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
   animation: spin 2s linear infinite;
 }
 
+/* Safari */
 @-webkit-keyframes spin {
   0% { -webkit-transform: rotate(0deg); }
   100% { -webkit-transform: rotate(360deg); }
@@ -25,14 +24,7 @@
   100% { transform: rotate(360deg); }
 }
 </style>
-</head>
-<body>
-</head>
-<body onload="myFunction()" style="margin:0;">
-
-<div id="loader"></div>
-
-<div style="display:none;" id="myDiv" class="animate-bottom">
+	</head>
 
   <title>German Website</title>
   <meta charset="utf-8">
