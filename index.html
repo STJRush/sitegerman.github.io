@@ -5,6 +5,45 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+	.button {
+  border-radius: 4px;
+  background-color: #000000;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+	
 	
 	table {
     font-family: monospace, verdana;
@@ -265,8 +304,8 @@ a.nav-link:active
 
 <div class="container-fluid bg-2 text-center">
 <A NAME="course"></A>
-  <h3 class="margin">Junior Cert German</h3>
-  <p>Junior Cert German is a popular language chosen at JC level and challenges students' aural and written German comprehension skills as well as their writing competencies.</p>
+  <h3 class="margin">Junior Certificate German:</h3>
+  <p>Junior Cert German is a popular language chosen at JC level and challenges students' aural and written German comprehension skills as well as their writing competencies.</p><br>
 	<p><strong>What's on the Junior certificate German course</strong></p>
   <ul>
   <li>Listening Comprehension (Aural)</li>
@@ -277,7 +316,7 @@ a.nav-link:active
 	<p>Both the higher and ordinary level papers are two and a half hour long with the first 30 minutes being the listening test (aural). Part two is reading comprehension where you will be given a series of notices,signs and articles that you must answer questions on. Finally part three is the written expression part of the paper where you write a letter and postcard.</p><br>
 	<p><strong>Any tips for doing well in Junior certificate German  ?</strong></p>
 	<p>Like all languages it is really important that you work on building your vocabulary as this will help you in the reading comprehension, listening and written part of the paper. Don't forget to prepare for your aural exam by practicing the listening comprehension questions as you listen to the streamed audio clips on Studyclix. Writing out a list of the most common verbs with their english meaning will also come in very handy for all sections of the paper.</p><br>
-	<p>Here is a picture of the book you use from 1st to 3rd year</p>
+	<p>Here is a picture of the book you use from 1st to 3rd year;</p>
 	<img class="round" src="https://www.cjfallon.ie/wp-content/uploads/2011/09/bd262-1.jpg" width="500" height="377">
 
 </div>
@@ -288,8 +327,7 @@ a.nav-link:active
   <h3 class="margin">Teachers:</h3><br>
 	<p>The teachers for German are as follows;<br>Ms. Kiely<br>Ms. Hall<br>Ms. Erwin
  
-  
-	<br>
+ 
        
 	<A NAME="learning"></A>
 	  <img class="round" src="http://station1.highcliffe.dorset.sch.uk/autosite/images/PUBHOMEPAGE/GTA2%20Logo.jpg" height="300" width="500"><br>
@@ -388,7 +426,7 @@ function showPage() {
 
 </script>
 	
-
+<button class="button"><span><a href="http://www.stjosephsrush.ie/">Click Me </a></span></button>
 
 </body>
 </html>
